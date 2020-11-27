@@ -7,7 +7,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |c|
-    c.upcase << "!"
+    c.capitalize << "!"
   end
 end
 
@@ -22,7 +22,7 @@ def find_the_cheese(array)
   i = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
   while i < cheese_types.length
-    return cheese_types[i] if array.include!(cheese_types[i])
+    return cheese_types[i] if array.include?(cheese_types[i])
     i += 1
   end
 end
