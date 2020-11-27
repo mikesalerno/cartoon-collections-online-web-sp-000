@@ -6,7 +6,7 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(planeteer_calls)
-  paneteer_calls.collect do |c|
+  planeteer_calls.collect do |c|
     c.upcase << !
   end
 end
